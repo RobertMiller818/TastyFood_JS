@@ -1,0 +1,108 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #3f76eb 100%);
+  padding-bottom: 2rem;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.rewards-form {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  margin: 2rem auto;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.rewards-title {
+  background-color: #175058;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 24px;
+  margin: -2rem -2rem 2rem -2rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.billing-addy,
+.credit-card-info {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  margin: 2rem -2rem 1.5rem -2rem;
+  border-radius: 0;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4bb0c2;
+}
+
+.rewards-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #27ae60, #229954);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+  margin-top: 2rem;
+}
+
+.rewards-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+}
+
+.error-message {
+  background-color: #ffebee;
+  border: 1px solid #66120c;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.success-message {
+  background-color: #e8f5e8;
+  border: 1px solid #4caf50;
+  color: #2e7d32;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: none;
+}

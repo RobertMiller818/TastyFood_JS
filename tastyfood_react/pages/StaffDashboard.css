@@ -1,0 +1,345 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #3f76eb 100%);
+  padding-bottom: 2rem;
+}
+
+.staff-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.staff-header {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staff-title {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.logout-btn {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3);
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(44, 62, 80, 0.4);
+}
+
+.orders-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  color: #2c3e50;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.order-number {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.order-status {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-assigned {
+  background: #cfe2ff;
+  color: #084298;
+}
+
+.status-completed {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.status-delivered {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.order-details {
+  margin-bottom: 1rem;
+}
+
+.order-info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-info-row:last-child {
+  border-bottom: none;
+}
+
+.order-info-row .label {
+  font-weight: 600;
+  color: #555;
+}
+
+.order-items {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.order-items ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.order-items li {
+  margin: 0.25rem 0;
+  color: #555;
+}
+
+.driver-assignment {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.driver-assignment label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.driver-assignment select {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #667eea;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.driver-assignment select:hover:not(:disabled) {
+  border-color: #3f76eb;
+}
+
+.driver-assignment select:disabled {
+  background: #e9ecef;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.complete-order-btn {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+  white-space: nowrap;
+}
+
+.complete-order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+.mark-delivered-btn {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+  white-space: nowrap;
+}
+
+.mark-delivered-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+/* Driver Section Styles */
+.drivers-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.no-drivers {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.driver-list-section {
+  margin-bottom: 2rem;
+}
+
+.driver-list-section:last-child {
+  margin-bottom: 0;
+}
+
+.subsection-title {
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.driver-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.driver-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.driver-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.driver-card.active-driver {
+  border-left: 4px solid #28a745;
+}
+
+.driver-card.inactive-driver {
+  border-left: 4px solid #dc3545;
+  opacity: 0.8;
+}
+
+.driver-info {
+  flex: 1;
+}
+
+.driver-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.driver-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.driver-details span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.driver-id {
+  font-weight: 600;
+}
+
+.driver-status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.driver-status-badge.status-active {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.driver-status-badge.status-inactive {
+  background: #f8d7da;
+  color: #842029;
+}
